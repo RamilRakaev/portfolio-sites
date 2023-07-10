@@ -1,0 +1,342 @@
+@media all and (max-width: 1919px) and (min-width: 1441px) {
+    .container {
+        padding-left: 14vw;
+        padding-right: 14vw;
+    }
+
+    h1 {
+        font-size: 5rem;
+    }
+
+    h2 {
+        font-size: 3.5rem;
+    }
+
+    h3 {
+        font-size: 2.4rem;
+    }
+
+    .new-stickers {
+        .scroll {
+            height: 250px;
+        }
+    }
+}
+
+@media all and (max-width: 1440px) and (min-width: 1025px) {
+    .container {
+        padding-left: 10vw;
+        padding-right: 10vw;
+    }
+
+    h1 {
+        font-size: 5rem;
+    }
+
+    h2 {
+        font-size: 3.5rem;
+    }
+
+    h3 {
+        font-size: 2.4rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    sub {
+        font-size: 1rem;
+    }
+    /*header start*/
+    .hero {
+
+        &__title {
+            font-size: 4rem;
+        }
+    }
+    /*header end*/
+
+    .current-auction {
+        &-hours {
+            width: 80px;
+        }
+    }
+
+    .new-stickers {
+        .scroll {
+            height: 250px;
+        }
+    }
+}
+
+@media all and (max-width: 1024px) and (min-width: 601px) {
+    h1 {
+        font-size: 5em;
+    }
+
+    h2 {
+        font-size: 3.5em;
+    }
+
+    h3 {
+        font-size: 2.3em;
+    }
+
+    h4 {
+        font-size: 1.4em;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    sub {
+        font-size: 1rem;
+    }
+
+    .btn-bet {
+        padding: 4vh 6vw;
+    }
+
+    .container {
+        padding-right: 3.6vw;
+        padding-left: 3.6vw;
+    }
+
+    .hero {
+        &__text {
+            width: 50vw;
+        }
+    }
+
+    .current-auction {
+        &-cash-rate {
+            width: auto;
+            height: auto;
+            gap: 1.5vh 0;
+            padding: 5vh 8vw 5vh 3vw;
+            border-radius: 25px;
+        }
+
+        &-ending {
+            justify-content: space-between;
+            width: 460px;
+            padding: 5vh 4vw;
+            border-radius: 25px;
+            gap: 0;
+        }
+
+        &-ending__text {
+            gap: 2vh 0;
+        }
+
+        .hour, .minute, .second {
+            gap: 1vh 0;
+        }
+
+        &-ending-time {
+            gap: 0 4vw;
+        }
+
+        &-sticker {
+            width: 40vw;
+        }
+
+        &-hours {
+            width: 100px;
+        }
+    }
+    .new-stickers {
+        .scroll {
+            height: 180px;
+        }
+    }
+}
+
+@media all and (max-width: 600px) {
+    /*base start*/
+    h1 {
+        font-size: 5rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 2rem;
+    }
+
+    h4 {
+        font-size: 1.2em;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    sub {
+        font-size: 1rem;
+    }
+
+    .container {
+        padding-right: 4vw;
+        padding-left: 4vw;
+    }
+    /*base end*/
+
+    /*buttons start*/
+    .wallet-btn {
+        display: none;
+    }
+
+    .mobile-wallet-btn {
+        display: block;
+    }
+
+    .mobile-links {
+        display: block;
+    }
+
+    .btn-bet {
+        width: auto;
+        height: auto;
+        font-size: 1rem;
+        padding: 4vh 13vw;
+    }
+
+    .btn-all-auctions {
+        width: 240px;
+    }
+
+    .btn-page:nth-last-child(1),
+    .btn-page:nth-last-child(2) {
+        display: flex;
+    }
+    /*buttons end*/
+    /*header start*/
+    .nav-link {
+        font-size: 1.2rem;
+    }
+
+    .header {
+        justify-content: space-between;
+        flex-direction: column;
+
+        .nav {
+            justify-content: space-between;
+
+            &-links {
+                display: none;
+            }
+        }
+    }
+    /*header end*/
+
+    /*hero start*/
+    .hero {
+        background-image: none;
+
+        &__text {
+            width: 100%;
+        }
+    }
+
+    .mobile-stickers-hero {
+        display: block;
+    }
+    /*hero end*/
+
+    /*auction start*/
+    .auction {
+        padding-top: 14vh;
+    }
+
+    .current-auction {
+        gap: 6vh 0;
+
+        &-author {
+            width: 170px;
+            height: 46px;
+            padding: 3vh 5vw;
+            border-radius: 24px;
+            gap: 0 3vw;
+        }
+
+        &-author__photo {
+            width: 24px;
+        }
+
+        &-cash-rate {
+            width: auto;
+            height: auto;
+            border-radius: 18px;
+            padding: 4vh 9vw;
+        }
+
+        &-ending {
+            width: auto;
+            height: auto;
+            border-radius: 18px;
+            padding: 5vh 6vw;
+        }
+
+        &-ending-time {
+            gap: 0 8vw;
+        }
+
+        &__description {
+            width: auto;
+        }
+
+        &-sticker {
+            width: 90vw;
+        }
+
+        &-hours {
+            display: none;
+        }
+    }
+    /*auction end*/
+
+    /*new stickers start*/
+    .new-stickers {
+
+        &-content {
+            height: 360px;
+        }
+
+        .scroll {
+            &-item {
+                width: 42vw;
+            }
+        }
+
+        .scroll-item:last-child {
+            display: none;
+        }
+    }
+    /*new stickers end*/
+}
+
+@media all and (max-width: 600px) and (min-width: 400px) {
+    h1 {
+        font-size: 3rem;
+    }
+}
+
+@media all and (max-width: 400px) {
+    .nav-link {
+        margin: 8px;
+
+        &:focus {
+            padding: 6px;
+            margin: 0;
+        }
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+}

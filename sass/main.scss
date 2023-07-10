@@ -1,0 +1,671 @@
+@import 'reset';
+
+/*fields start*/
+$black: #07060B;
+$white: #fff;
+$blue-green: #46F4DB;
+$green: #57D272;
+$blue-green-gradient: linear-gradient(180deg, $blue-green 27.08%, $green 100%);
+$light-red: #FF6F6F;
+$red: #D13130;
+$grey-light: #EDEDF2;
+$grey-middle: #95959D;
+/*fields end*/
+
+/*fonts start*/
+@font-face {
+    font-family: 'Muller';
+    src: url(../fonts/MullerRegular.woff2);
+    font-display: swap;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Muller';
+    src: url(../fonts/MullerBold.woff2);
+    font-display: swap;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Russo One';
+    src: url(../fonts/RussoOne-Regular.woff), url(../fonts/RussoOne-Regular.woff2);
+    font-display: swap;
+    font-weight: 400;
+}
+
+* {
+    font-style: normal;
+    line-height: normal;
+}
+
+h1 {
+    font-family: Russo One;
+    font-size: 5em;
+}
+
+h2 {
+    font-family: 'Russo One';
+    font-weight: 400;
+    font-size: 4em;
+}
+
+h3 {
+    font-family: 'Russo One';
+    font-weight: 400;
+    font-size: 2.6em;
+}
+
+h4 {
+    font-size: 1.4em;
+    font-family: Muller;
+    font-weight: 700;
+}
+
+p {
+    font-size: 1.4em;
+}
+
+sub {
+    font-size: 1.5em;
+    font-weight: 700;
+}
+/*fonts end*/
+
+/*base start*/
+.body {
+    font-family: Muller, sans-serif;
+    min-width: 320px;
+    color: $black;
+}
+
+.container {
+    display: flex;
+    padding-left: 17vw;
+    padding-right: 17vw;
+}
+
+.bg-white {
+    background: $white;
+}
+
+.bg-black {
+    background: $black;
+}
+
+.bg-gray {
+    background: $grey-light;
+}
+/*base end*/
+
+/*buttons start*/
+.btn {
+    font-family: Muller;
+    font-weight: 700;
+    font-size: 1.4rem;
+    box-sizing: border-box;
+}
+
+.wallet-btn {
+    font-family: Muller;
+    font-weight: 700;
+    font-size: 1rem;
+    color: $white;
+    background: $black;
+    padding: 17px 32px;
+    border-radius: 77px;
+
+    &:hover, &:focus {
+        color: $black;
+        background: $blue-green;
+    }
+
+    &:active {
+        color: $black;
+        background: $green;
+    }
+}
+
+.mobile-wallet-btn {
+    display: none;
+    fill: $black;
+    background: transparent;
+}
+
+.centered-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-buy {
+    @extend .centered-flex;
+    width: 176px;
+    height: 70px;
+    background: linear-gradient(180deg, $blue-green 27.08%, $green 100%);
+    border-radius: 40px;
+    color: $black;
+
+    &:hover {
+        background: $blue-green;
+    }
+
+    &:focus {
+        background: $blue-green;
+    }
+
+    &:active {
+        background: $green;
+    }
+
+    @extend .btn;
+}
+
+.authorship-block {
+    @extend .centered-flex;
+    @extend .btn;
+    width: 247px;
+    height: 70px;
+    background: linear-gradient(180deg, $blue-green 27.08%, $green 100%);
+    border-radius: 40px;
+
+    .btn-authorship_increazed {
+        width: 247px;
+        height: 70px;
+    }
+
+    .btn-authorship {
+        @extend .centered-flex;
+        width: 237px;
+        height: 60px;
+        border-radius: 40px;
+        background: $black;
+        color: $white;
+
+        &:hover {
+            color: $black;
+            background: linear-gradient(180deg, $blue-green 27.08%, $green 100%);
+            @extend .btn-authorship_increazed;
+        }
+
+        &:focus {
+            color: $black;
+            background: $blue-green;
+            @extend .btn-authorship_increazed;
+        }
+
+        &:active {
+            color: $black;
+            background: $green;
+            @extend .btn-authorship_increazed;
+        }
+    }
+}
+
+.btn-bet {
+    @extend .centered-flex;
+    @extend .btn;
+    width: 296px;
+    height: 70px;
+    border-radius: 40px;
+    background: $blue-green;
+
+    &:hover {
+        background: $blue-green-gradient;
+    }
+
+    &:focus {
+        background: $blue-green-gradient;
+    }
+
+    &:active {
+        background: $green;
+    }
+}
+
+.btn-all-auctions {
+    @extend .centered-flex;
+    @extend .btn;
+    width: 296px;
+    height: 70px;
+    border-radius: 40px;
+    background: $white;
+    border: 5px solid $blue-green;
+
+    &:hover {
+        background: $blue-green;
+        border: 0;
+    }
+
+    &:focus {
+        background: $blue-green;
+        border: 0;
+    }
+
+    &:active {
+        background: $green;
+        border: 0;
+    }
+}
+
+.btn-page {
+    @extend .centered-flex;
+    @extend .btn;
+    font-size: 1em;
+    color: $white;
+    background: transparent;
+    width: 56px;
+    height: 36px;
+    border-radius: 40px;
+    border: 2px solid $red;
+
+    &:hover {
+        background: $light-red;
+        border: 0;
+    }
+}
+
+.btn-page-active {
+    background: $red;
+    border: 0;
+}
+
+.btn-page:nth-last-child(1),
+.btn-page:nth-last-child(2) {
+    display: none;
+}
+/*buttons end*/
+
+/*header start*/
+.nav-link {
+    color: #06060B;
+    font-size: 1.4rem;
+    font-family: Muller;
+    font-weight: 700;
+    margin: 12px;
+
+    &:hover {
+        color: $blue-green;
+        border: 0;
+    }
+
+    &:active {
+        color: $green;
+    }
+
+    &:focus {
+        background: #FFF;
+        padding: 10px;
+        border: 2px solid $green;
+        margin: 0;
+    }
+}
+
+.header {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    justify-content: space-between;
+
+    .nav {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 4vw;
+        align-items: center;
+
+        &-links {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /*gap: 2vw;*/
+        }
+    }
+}
+
+.mobile-links {
+    display: none;
+    border-top: 1px solid #C4C4C4;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    .container {
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+/*header end*/
+
+/*hero start*/
+.hero {
+    display: flex;
+    align-items: center;
+    background-position: 50vw top;
+    background-image: url(../img/stickers-hero-1440.png);
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 680px;
+
+    &__text {
+        display: flex;
+        flex-direction: column;
+        gap: 5vh 5vw;
+        width: 50vw;
+    }
+
+    &__title {
+        line-break: auto;
+        word-break: normal;
+        color: #FFF;
+    }
+
+    &__buttons {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5vh 5vw;
+    }
+}
+
+.mobile-stickers-hero {
+    display: none;
+    width: 100%;
+    height: 145px;
+    overflow: hidden;
+
+    img {
+        width: 100%;
+    }
+}
+/*hero end*/
+
+/*auction start*/
+.auction {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 9vh;
+    padding-bottom: 22vh;
+}
+
+.current-auction {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 5vh 0;
+    width: 100%;
+
+    &-header {
+        display: flex;
+        gap: 0 2vw;
+    }
+
+    &-live {
+        @extend .centered-flex;
+    }
+
+    &__live {
+        @extend .centered-flex;
+        gap: 5px;
+        padding: 1vh 1vw;
+        border: 2px solid $red;
+        border-radius: 40px;
+
+        p {
+            font-family: Muller;
+            font-weight: 700;
+            font-size: 1.1rem;
+            line-height: normal;
+        }
+    }
+
+    &-sticker {
+        width: 20vw;
+
+        &__img {
+            width: 100%;
+        }
+    }
+
+    &__description {
+        display: flex;
+        width: 40vw;
+        flex-direction: column;
+        gap: 5vh 0;
+    }
+
+    &__description-name {
+        white-space: nowrap;
+        font-family: Muller;
+    }
+
+    &-author {
+        display: flex;
+        align-items: center;
+        gap: 0 0.5vw;
+        padding: 1vh 1vw;
+        border-radius: 23px;
+        width: 228px;
+        height: 70px;
+
+        &__name {
+            font-family: Muller;
+            font-weight: 700;
+        }
+    }
+
+    &__body {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 8vh 2vw;
+    }
+
+    &-bet {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 3vh 3vw;
+    }
+
+    &-cash-rate {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 260px;
+        height: 174px;
+        padding: 32px;
+        font-family: Muller;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        border-radius: 40px;
+        gap: 2vh 0;
+
+        p {
+            color: $black;
+        }
+
+        sub {
+            color: $grey-middle;
+        }
+    }
+
+    &-ending {
+        display: flex;
+        justify-content: space-around;
+        width: 350px;
+        height: 174px;
+        font-family: Muller;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        border-radius: 40px;
+        color: $white;
+        gap: 1vw;
+
+        &-time {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 0 1vw;
+        }
+
+        &__text {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .hour, .minute, .second {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.5vh 0;
+        }
+    }
+
+    &-hours {
+        width: 85px;
+    }
+}
+/*auction end*/
+
+/*order auctions start*/
+.order-auctions {
+    padding: 9vh;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 4vh 2vw;
+}
+
+.auction-item {
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    background: $black;
+    width: calc(7% + 160px);
+    overflow: hidden;
+
+    &-img-block {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: $grey-light;
+        width: 100%;
+        height: calc(7% + 160px);
+        padding: 1vh 2vw;
+    }
+
+    &-img {
+        width: 160px;
+    }
+
+    &-title {
+        color: $white;
+    }
+
+    &__description {
+        display: flex;
+        flex-direction: column;
+        padding: 2vh 1vw 4vh;
+
+        &-text {
+            display: flex;
+            flex-direction: column;
+            word-break: break-word;
+            gap: 1.4vh 0;
+            padding-top: 3vh;
+        }
+
+        sub {
+            color: $blue-green;
+        }
+
+        .auction-item-time {
+            font-family: Muller;
+            font-weight: 700;
+            font-size: 1em;
+            color: $grey-light;
+        }
+    }
+
+    &-author {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        gap: 0 0.7vw;
+
+        &__nickname {
+            font-size: 1em;
+            color: $white;
+        }
+    }
+}
+/*order auctions end*/
+
+/*new stickers start*/
+.new-stickers {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    gap: 2vh;
+
+    &-content {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 5vh;
+        width: 100%;
+    }
+
+    &__title {
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+
+    &-title-text {
+        color: $white;
+    }
+
+    $scroll-gap: 1.5vw !global;
+    $scroll-width: 16vw !global;
+
+    .scroll {
+        @extend .centered-flex;
+        width: 64vw;
+        height: 400px;
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+        transition: margin-left 250ms;
+
+        &-item {
+            display: none;
+            justify-content: center;
+            align-items: center;
+            width: $scroll-width;
+
+            &__img {
+                width: 100%;
+            }
+
+            &-2x {
+                width: $scroll-width * 2;
+            }
+        }
+        /* &-item:last-child {
+            width: 40vw;
+        }*/
+    }
+
+    .pagitaion {
+        display: flex;
+        justify-content: center;
+        gap: 1vw;
+    }
+}
+/*new stickers end*/
+@import 'adaptive';
