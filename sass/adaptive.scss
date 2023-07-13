@@ -21,6 +21,14 @@
             height: 250px;
         }
     }
+
+    .subscribe {
+
+        &-background {
+            width: auto;
+            /*height: 391px;*/
+        }
+    }
 }
 
 @media all and (max-width: 1440px) and (min-width: 1025px) {
@@ -99,6 +107,12 @@
         padding: 4vh 6vw;
     }
 
+    .subscribe-btn {
+        font-size: 1em;
+        width: 24vw;
+        height: 6vw;
+    }
+
     .container {
         padding-right: 3.6vw;
         padding-left: 3.6vw;
@@ -147,9 +161,28 @@
             width: 100px;
         }
     }
+
     .new-stickers {
         .scroll {
             height: 180px;
+        }
+    }
+
+    .subscribe {
+        height: 36vw;
+
+        &-content {
+            padding: 3vw 0;
+        }
+
+        &-form {
+            gap: 2vw 0;
+
+            &__input {
+                font-size: 1em;
+                width: 45vw;
+                height: 5vw;
+            }
         }
     }
 }
@@ -210,9 +243,21 @@
         width: 240px;
     }
 
+    .btn-page {
+        font-size: 0.85em;
+        width: 36px;
+        height: 28px;
+    }
+
     .btn-page:nth-last-child(1),
     .btn-page:nth-last-child(2) {
         display: flex;
+    }
+
+    .subscribe-btn {
+        font-size: 1em;
+        width: 50vw;
+        height: 12vw;
     }
     /*buttons end*/
     /*header start*/
@@ -316,8 +361,44 @@
         .scroll-item:last-child {
             display: none;
         }
+
+        .pagination {
+            gap: 3vw;
+        }
+
+        &-title-fire {
+            width: 25px;
+        }
     }
     /*new stickers end*/
+
+    /*subscribe start*/
+    .subscribe {
+        flex-direction: column;
+        height: auto;
+
+        &-content {
+            gap: 3vw 0;
+            padding: 3vw 0 0;
+        }
+
+        &-form {
+            gap: 2vw 0;
+
+            &__input {
+                font-size: 1em;
+                width: 92vw;
+                height: 12vw;
+            }
+        }
+
+        &-background {
+            &-img {
+                margin-bottom: -25%;
+            }
+        }
+    }
+    /*subscribe end*/
 }
 
 @media all and (max-width: 600px) and (min-width: 400px) {

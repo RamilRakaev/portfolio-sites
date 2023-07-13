@@ -96,6 +96,10 @@ sub {
 .bg-gray {
     background: $grey-light;
 }
+
+.bg-red {
+    background: $red;
+}
 /*base end*/
 
 /*buttons start*/
@@ -202,7 +206,7 @@ sub {
     }
 }
 
-.btn-bet {
+.btn-send-form {
     @extend .centered-flex;
     @extend .btn;
     width: 296px;
@@ -221,6 +225,10 @@ sub {
     &:active {
         background: $green;
     }
+}
+
+.btn-bet {
+    @extend .btn-send-form;
 }
 
 .btn-all-auctions {
@@ -273,6 +281,12 @@ sub {
 .btn-page:nth-last-child(1),
 .btn-page:nth-last-child(2) {
     display: none;
+}
+
+.subscribe-btn {
+    @extend .btn-send-form;
+    width: 15.4vw;
+    height: 3.6vw;
 }
 /*buttons end*/
 
@@ -530,11 +544,17 @@ sub {
 
 /*order auctions start*/
 .order-auctions {
-    padding: 9vh;
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 4vh 2vw;
+    flex-direction: column;
+    padding: 9vh;
+    gap: 4vh 0;
+
+    &-block {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 4vh 2vw;
+    }
 }
 
 .auction-item {
@@ -566,7 +586,7 @@ sub {
     &__description {
         display: flex;
         flex-direction: column;
-        padding: 2vh 1vw 4vh;
+        padding: 2vh 1vw 3vh;
 
         &-text {
             display: flex;
@@ -661,11 +681,86 @@ sub {
         }*/
     }
 
-    .pagitaion {
+    .pagination {
         display: flex;
         justify-content: center;
         gap: 1vw;
     }
 }
 /*new stickers end*/
+
+/*subscribe start*/
+.subscribe {
+    display: flex;
+    justify-content: space-between;
+    height: 23vw;
+
+    &-content {
+        display: flex;
+        flex-direction: column;
+        gap: 1.8vw 0;
+        padding: 1.8vw 0;
+    }
+
+    &-header {
+        color: $white;
+    }
+
+    &-form {
+        display: flex;
+        flex-direction: column;
+        gap: 0.9vw 0;
+
+        &__input {
+            display: flex;
+            align-items: center;
+            width: 24vw;
+            height: 4vw;
+            /*width: 460px;
+            height: 70px;*/
+            font-family: Muller;
+            font-size: 1.4em;
+            color: $grey-light;
+            background: $black;
+            padding: 10px 10px 10px 32px;
+            border-radius: 40px;
+        }
+
+        &-personal-data {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: $white;
+            font-size: 1em;
+
+            input {
+                content: '';
+                display: inline-block;
+                width: 1em;
+                height: 1em;
+                flex-shrink: 0;
+                flex-grow: 0;
+                border: 1px solid #adb5bd;
+                border-radius: 0.25em;
+                margin-right: 0.5em;
+                background-repeat: no-repeat;
+                background-position: center center;
+                background-size: 50% 50%;
+            }
+        }
+    }
+
+    &-background {
+        @extend .centered-flex;
+        /*width: auto;
+        height: 20vw;*/
+        overflow: hidden;
+
+        &-img {
+            width: 100%;
+        }
+    }
+}
+/*subscribe end*/
+
 @import 'adaptive';
