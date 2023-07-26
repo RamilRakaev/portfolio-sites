@@ -8,7 +8,7 @@
     <header class="header container">
         <div class="nav">
             <div class="logo">
-                <img class="logo-img" src="img/logo.png" alt="AURA логотип" />
+                <img class="logo-img" src="img/logo.png" alt="AURA logo" />
             </div>
             <button class="mobile-wallet-btn">
                 <svg class="logo-img" width="36" height="36" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
@@ -319,8 +319,8 @@
                     <div>
                         <button class="subscribe-btn">Подписаться</button>
                     </div>
-                    <div class="subscribe-form-personal-data">
-                        <label><input type="checkbox" /> Согласен на обработку персональных данных</label>
+                    <div>
+                        <label class="subscribe-form-personal-data"><input type="checkbox" /> Согласен на обработку персональных данных</label>
                     </div>
                 </div>
             </div>
@@ -328,8 +328,188 @@
                 <img class="subscribe-background-img" src="img/subscribe-background.png" alt="background" />
             </div>
         </section>
+        <section class="become-an-author container">
+            <div class="become-an-author-invitation">
+                <div class="become-an-author-invitation-text">
+                    <h2>Стать автором</h2>
+                    <p>
+                        <strong>Если ты художник или стремишься им стать — добро пожаловать к нам!</strong>
+                        <br />
+                        <br />
+                        Отправь нам от трёх до пяти своих работ и напиши свой ник в телеграме. Если наши кураторы решат, что нам по пути, то мы обязательно свяжемся с тобой и обговорим условия сотрудничества! <span class="bold">Удачи!</span>
+                    </p>
+                </div>
+                <img class="become-an-author__img-desktop" src="img/become-an-author.png" alt="Become an author" />
+            </div>
+            <div class="send-work">
+                <label class="send-work-input-image">
+                    <i class="send-work-pluse">
+                        <img class="send-work-pluse-img" src="img/+.png" alt="+" />
+                        <input class="send-work-pluse__input" type="file" name="name" accept="jpeg/png" />
+                    </i>
+                    <i class="send-work-tooltip">Прикрепить работы (.jpeg/ .png)</i>
+                </label>
+
+                <input class="send-work__tg-nickname" type="text" name="nickname" placeholder="@telegram_nickname" />
+                <button class="send-work-btn">Отправить</button>
+            </div>
+            <img class="become-an-author__img-tablet" srcset="img/become-an-author-1024.png" media="(max-width: 1024px)" />
+        </section>
+        <section class="sales-top container bg-black">
+            <div class="sales-top-title">
+                <h2 class="">Топ продаж</h2>
+            </div>
+            <div class="sales">
+                <div class="sale">
+                    <div class="sale__icon">
+                        <picture>
+                            <source class="sale__img" srcset="img/sales/holofobia1-mobile.png" media="(max-width: 600px)" />
+                            <img class="sale__img" src="img/sales/holofobia1.png" alt="holofobia1" />
+                        </picture>
+                    </div>
+                    <div class="sale__content">
+                        <div class="sale-author">
+                            <img class="sale-author__img" src="img/sales/ttgs.png" alt="ttgs" />ttgs
+                        </div>
+                        <div class="sale-title">
+                            <h3>Holofobia1</h3>
+                        </div>
+                        <div class="sale-price">
+                            <sub>4.70 ETH <span class="dollars">($16,873.47)</span></sub>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sale">
+                    <div class="sale__icon">
+                        <picture>
+                            <source class="sale__img" srcset="img/sales/y.eee-mobile.png" media="(max-width: 600px)" />
+                            <img class="sale__img" src="img/sales/y.eee.png" alt="y.eee" />
+                        </picture>
+                    </div>
+                    <div class="sale__content">
+                        <div class="sale-author">
+                            <img class="sale-author__img" src="img/sales/tat-2.png" alt="tat-2" />Tat_2
+                        </div>
+                        <div class="sale-title">
+                            <h3>Y.EEE</h3>
+                        </div>
+                        <div class="sale-price">
+                            <sub>3.00 ETH <span class="dollars">($10,731.24)</span></sub>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sale">
+                    <div class="sale__icon">
+                        <picture>
+                            <source class="sale__img" srcset="img/sales/baby-joda-mobile.png" media="(max-width: 600px)" />
+                            <img class="sale__img" src="img/sales/baby-joda.png" alt="baby-joda" />
+                        </picture>
+                    </div>
+                    <div class="sale__content">
+                        <div class="sale-author">
+                            <img class="sale-author__img" src="img/sales/chris22.png" alt="chris22" />Chris22
+                        </div>
+                        <div class="sale-title">
+                            <h3>Baby Joda</h3>
+                        </div>
+                        <div class="sale-price">
+                            <sub>2.00 ETH <span class="dollars">($7,121.04)</span></sub>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sale">
+                    <div class="sale__icon">
+                        <picture>
+                            <source class="sale__img" srcset="img/sales/infinity-09-mobile.png" media="(max-width: 600px)" />
+                            <img class="sale__img" src="img/sales/infinity-09.png" alt="infinity" />
+                        </picture>
+                    </div>
+                    <div class="sale__content">
+                        <div class="sale-author">
+                            <img class="sale-author__img" src="img/sales/oswaald.png" alt="oswaald" />Oswaald
+                        </div>
+                        <div class="sale-title">
+                            <h3>Infinity_09</h3>
+                        </div>
+                        <div class="sale-price">
+                            <sub>1.6109 ETH <span class="dollars">($5,762.32)</span></sub>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sale">
+                    <div class="sale__icon">
+                        <picture>
+                            <source class="sale__img" srcset="img/sales/sadsadsad-mobile.png" media="(max-width: 600px)" />
+                            <img class="sale__img" src="img/sales/sadsadsad.png" alt="sadsadsad" />
+                        </picture>
+                    </div>
+                    <div class="sale__content">
+                        <div class="sale-author">
+                            <img class="sale-author__img" src="img/sales/paul-22.png" alt="paul-22" />Paul-22
+                        </div>
+                        <div class="sale-title">
+                            <h3>Sadsadsad</h3>
+                        </div>
+                        <div class="sale-price">
+                            <sub>1.50 ETH <span class="dollars">($5,365.62)</span></sub>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sale">
+                    <div class="sale__icon">
+                        <picture>
+                            <source class="sale__img" srcset="img/sales/attntn-mobile.png" media="(max-width: 600px)" />
+                            <img class="sale__img" src="img/sales/attntn.png" alt="attntn" />
+                        </picture>
+                    </div>
+                    <div class="sale__content">
+                        <div class="sale-author">
+                            <img class="sale-author__img" src="img/sales/wardxxx.png" alt="wardxxx" />wardxxx
+                        </div>
+                        <div class="sale-title">
+                            <h3>Attntn</h3>
+                        </div>
+                        <div class="sale-price">
+                            <sub>1.0 ETH <span class="dollars"> ($3,577.08)</span></sub>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="top-sales container">
+            <div class="top-sales-content">
+                <p class="top-sales-title">Для попадания в топ необходимо:</p>
+                <ul class="top-sales-rules">
+                    <li><img class="rule-img" src="img/top-sales/collections.png" alt="Collections" />Минимум пять опубликованных работ</li>
+                    <li><img class="rule-img" src="img/top-sales/smile.png" alt="Collections" />Инвайт трём коллегам по цеху</li>
+                    <li><img class="rule-img" src="img/top-sales/verification.png" alt="Collections" />Верифицированный аккаунт</li>
+                </ul>
+            </div>
+            <div class="top-sales-picture">
+                <img src="img/top-sales/smiles.png" alt="Smiles" />
+            </div>
+        </section>
     </main>
-    <footer></footer>
+    <footer>
+        <div class="documentation container">
+            <div class="logo">
+                <img class="logo-img" src="img/logo.png" alt="AURA logo" />
+            </div>
+            <ul class="documentation-list">
+                <li><a class="nav-link nav__link" href="#">Соглашение</a></li>
+                <li><a class="nav-link nav__link" href="#">Лицензия</a></li>
+                <li><a class="nav-link nav__link" href="#">FAQ</a></li>
+            </ul>
+        </div>
+        <div class="copyright">
+            <p>AURA® | 2021</p>
+        </div>
+    </footer>
     <script src="js/script.js"></script>
 </body>
 </html>

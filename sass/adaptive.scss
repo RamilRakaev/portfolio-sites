@@ -18,7 +18,7 @@
 
     .new-stickers {
         .scroll {
-            height: 250px;
+            height: 300px;
         }
     }
 
@@ -185,6 +185,59 @@
             }
         }
     }
+
+    .become-an-author {
+        &-invitation {
+            width: 69vw;
+
+            &-text {
+                width: 100%;
+            }
+        }
+
+        &__img-desktop {
+            display: none;
+        }
+
+        &__img-tablet {
+            display: block;
+            order: 1;
+            width: 28vw;
+        }
+
+        .send-work {
+            order: 2;
+            width: 56vw;
+
+            &-input-image {
+                height: 32vw;
+            }
+        }
+    }
+
+    /*sales start*/
+    .sales {
+        .sale {
+            width: 45vw;
+
+            h3 {
+                font-size: 1.5em;
+            }
+        }
+    }
+    /*sales end*/
+
+    /*top sales start*/
+    .top-sales {
+        &-picture {
+            width: 40vw;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+    /*top sales end*/
 }
 
 @media all and (max-width: 600px) {
@@ -260,6 +313,7 @@
         height: 12vw;
     }
     /*buttons end*/
+
     /*header start*/
     .nav-link {
         font-size: 1.2rem;
@@ -399,6 +453,143 @@
         }
     }
     /*subscribe end*/
+
+    /*become an author start*/
+    .become-an-author {
+        flex-direction: column;
+        align-items: center;
+
+        &-invitation {
+            width: 60vw;
+
+            &-text {
+                width: 100%;
+            }
+        }
+
+        .send-work {
+            width: 90vw;
+            gap: 4vw;
+
+            &-input-image {
+                height: 40vw;
+            }
+
+            &-pluse {
+                width: 60px;
+                height: 60px;
+
+                &-img {
+                    width: 24px;
+                    height: 24px;
+                }
+            }
+
+            &-tooltip {
+                font-size: 1.1em;
+            }
+
+            &__tg-nickname {
+                font-size: 1.1em;
+            }
+        }
+    }
+    /*become an author end*/
+
+    /*sales start*/
+    .sales {
+        gap: 5vw;
+
+        .sale {
+            flex-direction: column;
+            width: 43vw;
+
+            &__icon {
+                justify-content: center;
+                padding: 12px 12px 0 12px;
+            }
+
+            &__img {
+                width: 108px;
+                height: 98px;
+            }
+
+            &__content {
+                gap: 1vw;
+                width: 100%;
+                height: 118px;
+                padding: 16px;
+            }
+
+            &-title {
+                h3 {
+                    font-size: 1.4em;
+                }
+            }
+
+            sub {
+                display: flex;
+                flex-direction: column;
+                gap: 1vw;
+            }
+        }
+    }
+    /*sales end*/
+
+    /*top sales start*/
+    .top-sales {
+        flex-direction: column;
+        gap: 40px 0;
+
+        &-content {
+            gap: 5vw;
+        }
+
+        &-title {
+            font-size: 1.4em;
+        }
+
+        &-rules {
+            font-size: 1.1em;
+        }
+
+        &-picture {
+
+            img {
+                width: 296px;
+                height: 103px;
+            }
+        }
+    }
+    /*top sales end*/
+
+    /*documentation start*/
+    .documentation {
+        display: flex;
+        flex-direction: column;
+
+        .logo {
+            display: flex;
+            justify-content: center;
+            position: relative;
+            left: -4vw;
+            width: 100vw;
+            padding-bottom: 20px;
+            border-bottom: 1px solid $black;
+        }
+
+        &-list {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            gap: 5vw;
+        }
+    }
+}
+
+@media all and (max-width: 800px) {
+    h3 {
+        font-size: 1.5em;
+    }
 }
 
 @media all and (max-width: 600px) and (min-width: 400px) {

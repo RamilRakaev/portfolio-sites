@@ -60,3 +60,27 @@ function switchPage(page) {
         }
     }
 }
+
+document.querySelector(".send-work-input-image-block").addEventListener("mouseover", () => {
+    document.querySelector(".send-work-pluse").style.border = "2px solid #46F4DB";
+})
+
+document.querySelector(".send-work-input-image-block").addEventListener("mouseout", () => {
+    document.querySelector(".send-work-pluse").style.border = "0";
+})
+
+document.querySelector(".send-work-input-image-block").addEventListener("focus", () => {
+    document.querySelector(".send-work-pluse").style.border = "2px solid #46F4DB";
+})
+
+document.querySelector(".send-work-input-image-block").addEventListener("blur", () => {
+    document.querySelector(".send-work-pluse").style.border = "0";
+})
+
+document.querySelector(".send-work-input-image-block").addEventListener("mousedown", () => {
+    document.querySelector(".send-work-pluse").style.border = "2px solid #57D272";
+})
+
+document.querySelector(".send-work-input-image-block").addEventListener("mouseup", () => {
+    document.querySelector(".send-work-pluse").style.border = "0";
+})
